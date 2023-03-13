@@ -12,9 +12,14 @@ const userNumber = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 console.log(userNumber);
 
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
+let finalResult = "Congrats you won!"
 
 if (computerNumber > userNumber){
+    finalResult = "Sorry the computer won!"
     console.log("Sorry the computer won :(");
 } else {
     console.log("Congrats you won!");
 }
+
+const result = document.getElementById("container");
+result.innerHTML = finalResult;
