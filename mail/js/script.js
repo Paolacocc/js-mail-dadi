@@ -22,8 +22,10 @@ for (let i = 0; i < mailList.length; i++){
     
 }
 
+let result = "Sorry try again"
 if (youHaveAccess === true) {
-    console.log("Yeah!! you have access to this content");
-} else {
-    console.log("Sorry try again");
-}
+    result = "Yeah!! you have access to this content";
+} 
+
+const containerElem = document.getElementById("container");
+containerElem.innerHTML = result
